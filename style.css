@@ -1,0 +1,303 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+@media screen and (max-width: 480px) {
+
+    /* Divisor style */
+
+.divisor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.divisor img {
+    height: 40px;
+}
+
+.divisor .l-linha {
+    background-color: red;
+    height: 1px;
+    width: 140px;
+    rotate: 3deg;
+}
+
+.divisor .r-linha {
+    background-color: black;
+    height: 1px;
+    width: 140px;
+    rotate: -3deg;
+}
+
+    /* Header style */
+
+    header {
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        padding: 12px;
+        box-shadow: inset 0px 0px 5px black;
+        z-index: 999;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header li {
+        display: inline;
+    }
+
+    header li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 2px 6px;
+        font-size: 13px;
+        background-color: #00000088;
+        border-radius: 20px;
+    }
+
+    header img {
+        height: 55px;
+    }
+
+    .logo-e-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-hamburguer {
+        width: 32px;
+    }
+
+    .menu-hamburguer span {
+        width: 100%;
+        height: 2px;
+        margin: 6px 0px;
+        background-color: #000;
+        display: block;
+    }
+
+    .x {
+        width: 34px;
+        position: relative;
+        display: none;
+    }
+
+    .x span {
+        width: 100%;
+        height: 2px;
+        margin: 6px 0px;
+        background-color: #000;
+        display: block;
+    } 
+
+    .x .esquerda {
+        rotate: 40deg;
+    }
+
+    .x .direita {
+        rotate: -40deg;
+        position: absolute;
+        top: 0px;
+    }
+
+    /* Links / buttons */
+
+    .links-buttons {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 32px;
+        background-image: url(./media/background.jfif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+    }
+
+    #start-content .buttons {
+        margin: 60px auto;
+        max-width: 200px;
+        display: none;
+    }
+
+    #start-content button {
+        height: 30px;
+        width: 100%;
+        padding: 4px;
+        margin-bottom: 24px;
+        background-color: red;
+        border: none;
+        box-shadow: 5px 5px 0px black;
+        transition: all .25 ease-in;
+    }
+
+    #start-content button a {
+        text-decoration: none;
+        color: #fff;
+        padding-top: 4px;
+        font-size: 18px;
+        font-weight: 800;
+        font-style: italic;
+        width: 100%;
+        height: 100%;
+        right: 0px;
+        top: 0px;
+    }
+
+    #start-content button:active {
+        box-shadow: -2px -2px 0px black;
+        background-color: #fff;
+        color: #000;
+    }
+
+    #start-content button:active a {
+        color: #000;
+    }
+
+    #start-content .text {
+        max-width: 85vw;
+        margin: 0 auto;
+        margin-bottom: 64px;
+    }
+
+    #start-content .text h2 {
+        font-family: 'Rowdies', cursive;
+        font-style: italic;
+        font-size: 2.3rem;
+        font-weight: 800;
+        color: rgba(218, 165, 32, 0.74);
+    }
+
+    #start-content .text p {
+        font-family: sans-serif;
+        color: #fff;
+        font-size: 13px;
+        font-style: italic;
+    }
+
+    /* Section - Próxima partida - Style */
+
+    #proxima-partida {
+        display: block;
+        text-align: center;
+        margin: 12px;
+        padding: 6px;
+        height: 200px;
+        margin-bottom: 180px;
+    }
+
+    #proxima-partida h2 {
+        margin-bottom: 12px;
+        font-size: 32px;
+        font-family: 'Rowdies';
+        margin-bottom: 42px;
+    }
+
+    #proxima-partida .placar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 18px;
+        margin-bottom: 12px;
+        padding: 0px 12px;
+        background-image: url(./media/brasileirao-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 185px;
+        border-radius: 20px;
+    }
+
+    #proxima-partida .placar img {
+        height: 70px;
+    }
+
+    #proxima-partida p {
+        font-style: italic;
+        background-color: #00000046;
+        border-radius: 20px;
+    }
+
+    /* Section - Morumbi */
+
+    #morumbi {
+        text-align: center;
+        margin-top: 42px;
+        height: 600px;
+    }
+
+    #morumbi video {
+        object-fit: cover;
+        width: 100%;
+        height: 620px;
+        position: relative;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    #morumbi h2 {
+        margin-bottom: 12px;
+        font-size: 32px;
+        font-family: 'Rowdies';
+        margin-bottom: 48px;
+    }
+
+    #morumbi .info {
+        position: absolute;
+        display: block;
+    }
+
+    #morumbi h3 {
+        font-family: 'Rowdies', cursive;
+        font-style: italic;
+        font-size: 3.8rem;
+        font-weight: 800;
+        color: rgba(218, 165, 32, 0.74);
+        margin-bottom: 128px;
+        margin-top: 48px;
+        padding: 8px;
+        text-shadow: 0px 0px 10px black;
+    }
+
+    #morumbi p {
+        font-family: sans-serif;
+        color: #fff;
+        font-style: italic;
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 36px;
+        font-size: 22px;
+    }
+
+    #morumbi .info button {
+        height: 40px;
+        width: 200px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        position: relative;
+    }
+
+    #morumbi .info button a {
+        color: #fff;
+        text-decoration: none;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+        padding-top: 12px;
+    }
+
+    #morumbi .info button:active {
+        background-color: #000;
+    }
+}
